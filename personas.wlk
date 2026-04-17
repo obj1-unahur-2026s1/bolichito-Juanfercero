@@ -23,4 +23,5 @@ object juan {
   }
 }
 
-//codespace
+// no codespace
+// abierto desde git clone
