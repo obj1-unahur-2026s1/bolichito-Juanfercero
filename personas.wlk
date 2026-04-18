@@ -1,6 +1,11 @@
+import objetos.*
+
 object rosa {
   method leGusta(objeto) {
     return objeto.peso() >= 2000
+  }
+  method dondeNaciste() {
+    return 'yapeyú'
   }
 }
 
