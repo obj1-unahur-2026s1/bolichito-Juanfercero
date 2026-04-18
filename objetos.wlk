@@ -43,6 +43,10 @@ object verde {
   method esFuerte() = true
 }
 
+object naranja {
+  method esFuerte() = true
+}
+
 object celeste {
   method esFuerte() = false
 }
@@ -115,3 +119,33 @@ wollokmethod color=(nuevoColor) {
 }
 
 */
+
+object arito {
+  method peso() = 180
+  method color() = celeste
+  method material() = cobre
+}
+
+object banquito {
+  var color = naranja
+  method peso() = 1700
+  method color() = color
+  method nuevoColor(nuevoColor) {
+    color = nuevoColor
+  }
+  method material() = madera
+}
+
+object cajita {
+  var peso = 400
+  var objetoDentro = remera
+  method peso() = peso + objetoDentro.peso()
+  method nuevoPeso(valor) {
+    peso = valor
+  }
+  method nuevoObjeto(obj) {
+    objetoDentro = obj
+  }
+  method color() = rojo
+  method material() = cobre
+}
